@@ -25,6 +25,13 @@ function Onboarding({ onSave }) {
     <div className="flex items-center justify-center min-h-screen bg-green-50">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md border-t-4 border-green-900">
         <div className="text-center mb-6">
+          {/* ÁREA DAS LOGOS */}
+          <div className="flex justify-center items-center gap-6 mb-6">
+            <img src="/logo-ipb.png" alt="Logo IPB" className="h-20 w-auto object-contain" />
+            <div className="h-12 w-px bg-gray-300"></div> {/* Linha divisória */}
+            <img src="/logo-spn.png" alt="Logo Seminário" className="h-20 w-auto object-contain" />
+          </div>
+
           <h1 className="text-3xl font-bold text-green-900 mb-2">TEObook Virtual</h1>
           <p className="text-gray-600 text-sm">Registro de Conteúdo para Seminaristas</p>
         </div>

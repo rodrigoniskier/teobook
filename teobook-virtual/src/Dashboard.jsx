@@ -58,10 +58,19 @@ function Dashboard({ aluno, onLogout }) {
     <div className="min-h-screen bg-gray-50 pb-20">
       {/* Cabeçalho Verde IPB */}
       <header className="bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center sticky top-0 z-10 border-t-4 border-t-green-900">
-        <div>
-          <h1 className="text-xl font-bold text-green-900">TEObook</h1>
-          <p className="text-xs text-gray-500">Seminário {aluno.nomeSeminario}</p>
+        <div className="flex items-center gap-4">
+          {/* LOGOS PEQUENAS */}
+          <div className="flex items-center gap-3 border-r pr-4 border-gray-300">
+             <img src="/logo-ipb.png" alt="IPB" className="h-10 w-auto" />
+             <img src="/logo-spn.png" alt="SPN" className="h-10 w-auto" />
+          </div>
+
+          <div>
+            <h1 className="text-xl font-bold text-green-900 leading-none">TEObook</h1>
+            <p className="text-xs text-gray-500">Seminário {aluno.nomeSeminario}</p>
+          </div>
         </div>
+        
         <div className="flex items-center gap-3">
            <div className="text-right hidden sm:block">
              <p className="text-sm font-medium text-gray-700">{aluno.nomeSeminarista}</p>
