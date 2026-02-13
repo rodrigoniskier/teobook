@@ -36,7 +36,7 @@ function ChatSidebar({ onClose, textoEditor }) {
       }
 
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
 
       // O "Cérebro" Reformado
       const promptSistema = `
